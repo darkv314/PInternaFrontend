@@ -1,0 +1,92 @@
+.full-table {
+    height: 100%;
+    max-height: 80vh;
+    overflow: auto;
+    margin: 0 1rem;
+}
+
+.table-container {
+    font-family: inherit;
+}
+
+.table-container table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th {
+    border: 1px solid rgb(150, 150, 150);
+    padding: 0.5em 0.3em;
+}
+
+.table-container th input {
+    border-radius: 0.2em;
+    border: 0.5px solid rgb(150, 150, 150);
+    padding: 0.25em;
+}
+
+.table-container th input:focus {
+    outline-color: var(--secondary);
+}
+
+.table-container td {
+    border-bottom: 1px solid lightgray;
+    padding: 1em 0;
+}
+
+.search-bar-table {
+    z-index: 0;
+    position: fixed;
+    top: 22.6%;
+    width: 100%;
+    padding-right: 5.8em;
+}
+
+.search-bar-table input {
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 0.3em;
+    border: 0.3px solid rgb(157, 157, 157);
+}
+
+.search-bar-table input:focus {
+    outline-color: var(--secondary);
+}
+
+.full-table * {
+    font-family: inherit;
+}
+
+.navigation-buttons {
+    margin: 1em 0;
+}
+
+.navigation-buttons button {
+    padding: 0.5em 0.6em;
+    border: none;
+    border-radius: 0.2em;
+    margin: 0.2em;
+    background-color: var(--secondary);
+}
+
+.navigation-buttons button:disabled {
+    background-color: var(--secondary-disabled);
+}
+
+.navigation-buttons button:hover {
+    color: var(--white);
+}
+
+.navigation-buttons input {
+    padding: 0.3em;
+}
+
+.navigation-buttons input:focus {
+    outline-color: var(--secondary);
+}
+
+.navigation-buttons select {
+    margin-left: 0.1em;
+    padding: 0.3em;
+}

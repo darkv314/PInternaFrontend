@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    gap: 7rem;
+}
+
+nav svg {
+    color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    width: 40%;
+}
+
+nav svg:hover {
+    color: var(--secondary);
+}

@@ -1,0 +1,5 @@
+.estudiante {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 30% 70%;
+}

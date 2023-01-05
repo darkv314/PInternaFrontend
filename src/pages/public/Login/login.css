@@ -1,0 +1,113 @@
+.offscreen {
+    display: none;
+}
+
+.errmsg {
+    color: var(--red);
+    font-size: 1 rem;
+}
+
+.loginContainer {
+    background-color: rgba(35, 35, 35, 0.641);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+}
+
+.loginSection {
+    display: grid;
+    width: 60%;
+    height: 60%;
+    grid-template-columns: 1fr 60%;
+    align-items: stretch;
+    border-radius: 1rem;
+}
+
+.loginSection form {
+    padding: 2rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    border-radius: 0 1rem 1rem 0rem;
+}
+
+.loginSection form button {
+    border: none;
+    background-color: var(--secondary);
+    padding: 0.75em;
+    font-family: inherit;
+    border-radius: 0.3rem;
+    color: whitesmoke;
+    margin-top: 2em;
+}
+
+.loginSection form button:disabled {
+    background-color: var(--secondary-disabled);
+    color: black;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm input {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: inherit;
+    background-color: var(--white);
+}
+
+.inputForm input:focus {
+    outline-color: var(--secondary);
+}
+
+.inputForm label {
+    font-family: "Merriweather", serif;
+    font-size: 0.75rem;
+    margin-bottom: 0.3rem;
+}
+
+.loginSection section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 1rem 0 0 1rem;
+    color: whitesmoke;
+}
+@media (max-width: 900px) {
+    .loginSection {
+        width: 80%;
+        grid-template-columns: 1fr 60%;
+    }
+}
+
+@media (max-width: 710px) {
+    .loginSection {
+        height: 80%;
+        display: grid;
+        grid-template-rows: 1fr 60%;
+        grid-template-columns: 1fr;
+    }
+
+    .loginSection section {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .loginSection form {
+        border-radius: 0 0 1rem 1rem;
+    }
+}

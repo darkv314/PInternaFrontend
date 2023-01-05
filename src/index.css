@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700;800&family=Merriweather:wght@400;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    font-family: "Karla", sans-serif;
+    --primary: #0e1941;
+    --blue: #b2faf2;
+    --white: #fdfffc;
+    --yellow: #fffde7;
+    --red: #c1292e;
+    --secondary: #05b4d5;
+    --secondary-disabled: #05b2d567;
+    --text: #2f3d4c;
+    --cyan: #44a9ba;
+    --green: #6bff8c;
+}

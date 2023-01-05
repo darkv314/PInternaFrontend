@@ -1,0 +1,80 @@
+.createForm {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(119, 119, 119, 0.481);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.createForm h2 {
+    text-align: center;
+}
+
+.createForm form {
+    max-width: 300px;
+    border-radius: 1em;
+    color: var(--white);
+    padding: 3em;
+    display: flex;
+    gap: 1.3em;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+.createForm form input,
+.createForm form select,
+.createForm button {
+    border-radius: 0.3em;
+    padding: 0.35em;
+    border: none;
+    outline: none;
+}
+
+.createForm form input:focus,
+.createForm form select:focus {
+    outline: 3px solid;
+    outline-color: var(--secondary);
+}
+
+.createForm button {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.createForm button:disabled {
+    background-color: var(--secondary-disabled);
+    color: #000;
+}
+
+.startEndForm {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    width: 100%;
+    justify-items: stretch;
+    gap: 1.15em;
+}
+
+.startEndForm label {
+    font-size: 0.75em;
+}
+
+.startEndForm select {
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+    .createForm {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: start;
+    }
+    .createForm form {
+        justify-self: start;
+        margin-left: 5%;
+    }
+}

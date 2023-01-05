@@ -1,0 +1,37 @@
+.materias {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 30% 70%;
+}
+
+.top-side {
+    margin: 0 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-side select {
+    border-radius: 0.3em;
+    padding: 0.3em;
+    font-family: inherit;
+    outline-color: var(--secondary);
+}
+
+.Editar,
+.Eliminar,
+.startTerm,
+.endTerm {
+    text-align: center;
+}
+
+.Editar,
+.Eliminar {
+    min-width: 80px;
+}
+
+.name {
+    font-weight: bold;
+}

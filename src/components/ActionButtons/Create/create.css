@@ -1,0 +1,15 @@
+.createButton {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+    background-color: var(--green);
+}
+
+.createButton:hover {
+    color: var(--white);
+}
