@@ -47,6 +47,37 @@ function Estudiante() {
                 },
             ],
         },
+    ];
+    const tablaConfigStudent = [
+        {
+            main: "Materias",
+            columns: [
+                {
+                    name: "Nombre",
+                    cell: "name",
+                },
+                {
+                    name: "Inicio",
+                    cell: "startTerm",
+                },
+                {
+                    name: "Fin",
+                    cell: "endTerm",
+                },
+                {
+                    name: "Horario",
+                    cell: "schedule",
+                },
+                {
+                    name: "Docente",
+                    cell: "lecturer",
+                },
+                {
+                    name: "Dueño",
+                    cell: "ownerUsername",
+                },
+            ],
+        },
         {
             main: "Acciones",
             columns: ["Eliminar"],
@@ -113,11 +144,17 @@ function Estudiante() {
                 />
             ) : null}
             <Tabla
-                config={tablaConfig}
+                config={
+                    !auth?.roles?.find((role) => role.includes(["student"]))
+                        ? tablaConfigStudent
+                        : tablaConfig
+                }
                 data={materias}
                 handleDelete={handleDelete}
             />
-            <Create handleCreate={handleCreate} />
+            {!auth?.roles?.find((role) => role.includes(["student"])) ? (
+                <Create handleCreate={handleCreate} />
+            ) : null}
         </div>
     );
 }
