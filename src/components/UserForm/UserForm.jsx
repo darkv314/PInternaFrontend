@@ -78,19 +78,24 @@ function UserForm({
                 usercode: code,
                 career: career,
             });
-            console.log(mat);
             const response = await postData("user/add", body, auth.accessToken);
             if (response.statusText === "Created") {
-                const res = await postData(
-                    "user-career/add",
-                    JSON.stringify({
-                        usercode: code,
-                        userName: username,
-                        career: parseInt(career),
-                    }),
-                    auth.accessToken
-                );
-                if (res.statusText === "Created") {
+                if (role === "student") {
+                    const res = await postData(
+                        "user-career/add",
+                        JSON.stringify({
+                            usercode: code,
+                            userName: username,
+                            career: parseInt(career),
+                        }),
+                        auth.accessToken
+                    );
+                    if (res.statusText === "Created") {
+                        setCreateUser(false);
+                        setSubmitted(!submitted);
+                        alert("Usuario creado con exito");
+                    }
+                } else {
                     setCreateUser(false);
                     setSubmitted(!submitted);
                     alert("Usuario creado con exito");
