@@ -1,8 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import useAuth from "../../../hooks/useAuth";
 import axios from "../../../api/axios";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import logo from "../../../assets/logo.svg";
+import { useNavigate, useLocation } from "react-router-dom";
 import background from "../../../assets/background.svg";
 import "./login.css";
 import useStudent from "../../../hooks/useStudent";
