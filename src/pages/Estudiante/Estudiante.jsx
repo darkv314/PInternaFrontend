@@ -73,8 +73,8 @@ function Estudiante() {
                     cell: "lecturer",
                 },
                 {
-                    name: "Dueño",
-                    cell: "ownerUsername",
+                    name: "Créditos",
+                    cell: "credits",
                 },
             ],
         },

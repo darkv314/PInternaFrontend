@@ -41,6 +41,8 @@ function GestionForm({
                 setCreateGestion(false);
                 setSubmitted(!submitted);
                 alert("Gestión creada con exito");
+            } else {
+                alert(`Gestión no creada: ${response.data.message}`);
             }
         } else {
             const response = await putData(
