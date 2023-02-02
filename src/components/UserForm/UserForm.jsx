@@ -81,8 +81,8 @@ function UserForm({
                 career: career,
             });
             const response = await postData("user/add", body, auth.accessToken);
-            // console.log(response);
-            if (response.statusText === "Created") {
+            console.log(response);
+            if (response.status < 400) {
                 if (role === "student") {
                     const res = await postData(
                         "user-career/add",
@@ -93,7 +93,7 @@ function UserForm({
                         }),
                         auth.accessToken
                     );
-                    if (res.statusText === "Created") {
+                    if (res.status < 400) {
                         setCreateUser(false);
                         setSubmitted(!submitted);
                         alert("Usuario creado con exito");

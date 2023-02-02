@@ -104,7 +104,7 @@ function MateriaForm({
                 body,
                 auth.accessToken
             );
-            if (response.statusText === "Created") {
+            if (response.status < 400) {
                 setCreateMateria(false);
                 setSubmitted(!submitted);
                 alert("Materia creada con exito");
