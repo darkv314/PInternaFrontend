@@ -33,23 +33,24 @@ function Estudiantes() {
     ];
 
     useEffect(() => {
-        async function getStudents() {
+        async function getCareer() {
             await fetchData(
                 `career/head/${auth.user}`,
                 setCareer,
                 auth?.accessToken
             );
         }
-        getStudents();
+        getCareer();
     }, []);
 
     useEffect(() => {
-        // console.log(career);
-        fetchData(
-            `user-career/career/${career.id}`,
-            setStudents,
-            auth?.accessToken
-        );
+        career
+            ? fetchData(
+                  `user-career/career/${career.id}`,
+                  setStudents,
+                  auth?.accessToken
+              )
+            : null;
     }, [career]);
 
     function handleEdit(e) {

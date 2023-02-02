@@ -66,6 +66,10 @@ function Login() {
     }, []);
 
     useEffect(() => {
+        setAuth({});
+    }, []);
+
+    useEffect(() => {
         setErrMsg("");
     }, [user, pwd]);
 

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import postData from "../../api/PostData";
 import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
+import InputForm from "../InputForm/InputForm";
+import SelectForm from "../SelectForm/SelectForm";
 // import "./materiaForm.css";
 
 function UserForm({
@@ -79,7 +81,7 @@ function UserForm({
                 career: career,
             });
             const response = await postData("user/add", body, auth.accessToken);
-            console.log(response);
+            // console.log(response);
             if (response.statusText === "Created") {
                 if (role === "student") {
                     const res = await postData(
@@ -128,82 +130,54 @@ function UserForm({
                 onClick={(e) => e.stopPropagation()}
             >
                 <h2>{type} Usuario</h2>
-                {/* <label htmlFor="name">Nombre:</label> */}
-                <input
-                    type="text"
+
+                <InputForm
                     id="name"
-                    autoComplete="off"
-                    required
-                    placeholder="Nombre"
+                    label="Nombre"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    setValue={setName}
                 />
-                {/* <label htmlFor="owner">Dueño:</label> */}
-                <input
-                    type="text"
+
+                <InputForm
                     id="username"
-                    autoComplete="off"
-                    required
-                    placeholder="Username"
+                    label="Username"
                     value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    setValue={setUsername}
                 />
-                <input
-                    type="text"
+
+                <InputForm
                     id="email"
-                    autoComplete="off"
-                    required
-                    placeholder="Email"
+                    label="Email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    setValue={setEmail}
                 />
-                <input
-                    type="text"
+
+                <InputForm
                     id="code"
-                    autoComplete="off"
-                    required
-                    placeholder="Código"
+                    label="Código"
                     value={code}
-                    onChange={(e) => setCode(e.target.value)}
+                    setValue={setCode}
                 />
-                {/* <label htmlFor="schedule">Horario:</label> */}
-                <select
-                    name="role"
+
+                <SelectForm
                     id="role"
+                    label="Rol"
                     value={role}
-                    onChange={(e) => setRole(e.target.value)}
-                >
-                    {roles.map((role) => (
-                        <option
-                            className="role-option"
-                            key={role.id}
-                            value={role.name}
-                        >
-                            {role.name}
-                        </option>
-                    ))}
-                </select>
+                    setValue={setRole}
+                    options={roles}
+                />
 
                 {role === "student" ? (
-                    <select
-                        name="career"
+                    <SelectForm
                         id="career"
+                        label="Carrera"
                         value={career}
-                        onChange={(e) => setCareer(e.target.value)}
-                    >
-                        {careers.map((career) => (
-                            <option
-                                className="career-option"
-                                key={career.id}
-                                value={career.id}
-                            >
-                                {career.name}
-                            </option>
-                        ))}
-                    </select>
+                        setValue={setCareer}
+                        options={careers}
+                        values="id"
+                    />
                 ) : null}
 
-                {/* <label htmlFor="credits">Creditos:</label> */}
                 <button
                     disabled={
                         !validEmail ||

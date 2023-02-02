@@ -16,21 +16,43 @@
 
 .createForm form {
     max-width: 300px;
+    min-width: 22.5%;
     border-radius: 1em;
     color: var(--white);
     padding: 3em;
     display: flex;
-    gap: 1.3em;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     background-color: var(--primary);
 }
 
+.input-form {
+    display: grid;
+    gap: 0.25rem;
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+}
+
+.input-form input {
+    width: 100%;
+}
+
+.input-form select {
+    width: 100%;
+}
+
+.input-form label {
+    font-size: 0.75rem;
+}
+
 .createForm form input,
 .createForm form select,
 .createForm button {
+    font-family: inherit;
     border-radius: 0.3em;
-    padding: 0.35em;
+    padding: 0.4rem;
     border: none;
     outline: none;
 }
@@ -42,6 +64,7 @@
 }
 
 .createForm button {
+    margin-top: 0.5rem;
     background-color: var(--secondary);
     color: var(--white);
 }

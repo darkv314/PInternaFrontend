@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import postData from "../../api/PostData";
 import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
+import SelectForm from "../SelectForm/SelectForm";
 // import "./materiaForm.css";
 
 function StudentForm({
@@ -33,6 +34,8 @@ function StudentForm({
             setCreateRelation(false);
             setSubmitted(!submitted);
             alert("Materia agregada con exito");
+        } else {
+            alert(`Materia no agregada: ${response.data.message}`);
         }
     };
 
@@ -45,22 +48,16 @@ function StudentForm({
             >
                 <h2>Agregar Materia</h2>
                 {/* <label htmlFor="schedule">Horario:</label> */}
-                <select
-                    name="materia"
+
+                <SelectForm
                     id="materia"
+                    label="Materia"
                     value={materia}
-                    onChange={(e) => setMateria(e.target.value)}
-                >
-                    {materias.map((materia) => (
-                        <option
-                            className="materia-option"
-                            key={materia.id}
-                            value={materia.id}
-                        >
-                            {materia.name}
-                        </option>
-                    ))}
-                </select>
+                    setValue={setMateria}
+                    options={materias}
+                    values="id"
+                />
+
                 {/* <label htmlFor="credits">Creditos:</label> */}
                 <button>Agregar</button>
             </form>

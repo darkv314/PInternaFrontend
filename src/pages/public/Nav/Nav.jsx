@@ -4,7 +4,9 @@ import {
     FaUsers,
     FaBookReader,
     FaRegCalendarCheck,
+    FaSignOutAlt,
 } from "react-icons/fa";
+
 import "./nav.css";
 import NavButton from "../../../components/NavButton/NavButton";
 
@@ -29,6 +31,7 @@ function Nav() {
                     />
                 </>
             ) : null}
+            <NavButton path="/login" icon={<FaSignOutAlt />} tooltip="Logout" />
         </nav>
     );
 }

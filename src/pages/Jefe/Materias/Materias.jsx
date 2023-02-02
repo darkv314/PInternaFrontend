@@ -62,7 +62,7 @@ function Materias() {
     useEffect(() => {
         fetchData("user/role/jefe", setOwners, auth?.accessToken);
         fetchData("course", setMaterias, auth?.accessToken);
-        console.log(materias);
+        // console.log(materias);
         fetchData("season", setGestiones, auth?.accessToken);
         fetchData("career", setCareers, auth?.accessToken);
     }, []);

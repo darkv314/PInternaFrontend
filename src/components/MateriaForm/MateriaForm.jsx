@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import postData from "../../api/PostData";
 import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
+import InputForm from "../InputForm/InputForm";
+import SelectForm from "../SelectForm/SelectForm";
 import "./materiaForm.css";
 
 function MateriaForm({
@@ -42,28 +44,16 @@ function MateriaForm({
     const genStartEndOptions = () => {
         let options = [];
         for (let i = 1; i <= 12; i++) {
-            options.push(
-                <option key={i} value={i}>
-                    {i}
-                </option>
-            );
+            options.push({ name: i, id: i });
         }
         return options;
     };
 
     const genHorario = () => {
-        let options = [
-            <option key={0} value="Super A">
-                {"Super A"}
-            </option>,
-        ];
+        let options = [{ name: "Super A", id: 0 }];
         const schedule = "ABCDEF";
         for (let i = 0; i < schedule.length; i++) {
-            options.push(
-                <option key={i + 1} value={schedule[i]}>
-                    {schedule[i]}
-                </option>
-            );
+            options.push({ name: schedule[i], id: i + 1 });
         }
         return options;
     };
@@ -96,6 +86,7 @@ function MateriaForm({
     }, [start, end]);
 
     const handleSubmit = async (e) => {
+        // console.log(owner);
         e.preventDefault();
         const body = JSON.stringify({
             name,
@@ -140,118 +131,75 @@ function MateriaForm({
                 onClick={(e) => e.stopPropagation()}
             >
                 <h2>{type} Materia</h2>
-                {/* <label htmlFor="name">Nombre:</label> */}
-                <input
-                    type="text"
+
+                <InputForm
                     id="name"
-                    autoComplete="off"
-                    required
-                    placeholder="Nombre"
+                    label="Nombre"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    setValue={setName}
                 />
-                {/* <label htmlFor="owner">Dueño:</label> */}
-                <select
-                    name="owner"
+
+                <SelectForm
                     id="owner"
+                    label="Dueño"
                     value={owner}
-                    onChange={(e) => setOwner(e.target.value)}
-                >
-                    {owners.map((owner) => (
-                        <option
-                            className="gestion-option"
-                            key={owner.id}
-                            value={owner.username}
-                        >
-                            {owner.name}
-                        </option>
-                    ))}
-                </select>
-                {/* <label htmlFor="owner">Docente:</label> */}
-                <input
-                    type="text"
+                    setValue={setOwner}
+                    options={owners}
+                    values="username"
+                />
+
+                <InputForm
                     id="lecturer"
-                    autoComplete="off"
-                    required
-                    placeholder="Docente"
+                    label="Docente"
                     value={lecturer}
-                    onChange={(e) => setLecturer(e.target.value)}
+                    setValue={setLecturer}
                 />
                 <div className="startEndForm">
-                    <span>
-                        <label htmlFor="start">Inicio:</label>
-                        <select
-                            name="start"
-                            id="start"
-                            value={start}
-                            onChange={(e) => setStart(e.target.value)}
-                        >
-                            {genStartEndOptions()}
-                        </select>
-                    </span>
-                    <span>
-                        <label htmlFor="end">Fin:</label>
-                        <select
-                            name="end"
-                            id="end"
-                            value={end}
-                            onChange={(e) => setEnd(e.target.value)}
-                        >
-                            {genStartEndOptions()}
-                        </select>
-                    </span>
+                    <SelectForm
+                        id="start"
+                        label="Inicio"
+                        value={start}
+                        setValue={setStart}
+                        options={genStartEndOptions()}
+                    />
+                    <SelectForm
+                        id="end"
+                        label="Fin"
+                        value={end}
+                        setValue={setEnd}
+                        options={genStartEndOptions()}
+                    />
                 </div>
-                {/* <label htmlFor="schedule">Horario:</label> */}
-                <select
-                    name="schedule"
+                <SelectForm
                     id="schedule"
+                    label="Horario"
                     value={schedule}
-                    onChange={(e) => setSchedule(e.target.value)}
-                >
-                    {genHorario()}
-                </select>
-                {/* <label htmlFor="credits">Creditos:</label> */}
-                <input
+                    setValue={setSchedule}
+                    options={genHorario()}
+                />
+                <InputForm
                     type="number"
                     id="credits"
-                    required
-                    placeholder="Créditos"
+                    label="Créditos"
                     value={credits}
-                    onChange={(e) => setCredits(e.target.value)}
+                    setValue={setCredits}
                 />
-                {/* <label htmlFor="gestionForm">Gestión:</label> */}
-                <select
-                    name="gestionForm"
+                <SelectForm
                     id="gestionForm"
+                    label="Gestión"
                     value={season}
-                    onChange={(e) => setSeason(e.target.value)}
-                >
-                    {gestiones.map((gestion) => (
-                        <option
-                            className="gestion-option"
-                            key={gestion.id}
-                            value={gestion.name}
-                        >
-                            {gestion.name}
-                        </option>
-                    ))}
-                </select>
-                <select
-                    name="career"
+                    setValue={setSeason}
+                    options={gestiones}
+                />
+
+                {/* <SelectForm
                     id="career"
+                    label="Carrera"
                     value={career}
-                    onChange={(e) => setCareer(e.target.value)}
-                >
-                    {careers.map((career) => (
-                        <option
-                            className="gestion-option"
-                            key={career.id}
-                            value={career.name}
-                        >
-                            {career.name}
-                        </option>
-                    ))}
-                </select>
+                    setValue={setCareer}
+                    options={careers}
+                /> */}
+
                 <button
                     disabled={
                         !validLecturer || !validName || !validTerm

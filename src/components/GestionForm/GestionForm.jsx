@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import postData from "../../api/PostData";
 import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
+import InputForm from "../InputForm/InputForm";
 // import "./gestionForm.css";
 
 function GestionForm({
@@ -67,15 +68,13 @@ function GestionForm({
             >
                 <h2>{type} Materia</h2>
                 {/* <label htmlFor="name">Nombre:</label> */}
-                <input
-                    type="text"
+                <InputForm
                     id="name"
-                    autoComplete="off"
-                    required
-                    placeholder="Nombre"
+                    label="Nombre"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    setValue={setName}
                 />
+
                 <button disabled={!validName ? true : false}>{type}</button>
             </form>
         </div>
