@@ -4,6 +4,8 @@ import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
 import InputForm from "../InputForm/InputForm";
 import SelectForm from "../SelectForm/SelectForm";
+import UseAnimations from "react-useanimations";
+import loading from "react-useanimations/lib/loading";
 import "./materiaForm.css";
 
 function MateriaForm({
@@ -17,6 +19,8 @@ function MateriaForm({
     setSubmitted,
 }) {
     const { auth } = useAuth();
+
+    const [isLoading, setIsLoading] = useState(false);
 
     const [name, setName] = useState("");
     const [validName, setValidName] = useState(false);
@@ -88,6 +92,7 @@ function MateriaForm({
     const handleSubmit = async (e) => {
         // console.log(owner);
         e.preventDefault();
+        setIsLoading(true);
         const body = JSON.stringify({
             name,
             startTerm: start,
@@ -104,6 +109,7 @@ function MateriaForm({
                 body,
                 auth.accessToken
             );
+            response && setIsLoading(false);
             if (response.status < 400) {
                 setCreateMateria(false);
                 setSubmitted(!submitted);
@@ -207,7 +213,12 @@ function MateriaForm({
                             : false
                     }
                 >
-                    {type}
+                    <div className="loading">
+                        {type}
+                        {isLoading && (
+                            <UseAnimations size={12} animation={loading} />
+                        )}
+                    </div>
                 </button>
             </form>
         </div>

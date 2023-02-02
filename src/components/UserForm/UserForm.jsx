@@ -4,6 +4,8 @@ import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
 import InputForm from "../InputForm/InputForm";
 import SelectForm from "../SelectForm/SelectForm";
+import UseAnimations from "react-useanimations";
+import loading from "react-useanimations/lib/loading";
 // import "./materiaForm.css";
 
 function UserForm({
@@ -21,6 +23,8 @@ function UserForm({
     const CODE_CHECK = /^[0-9]+$/;
 
     const { auth } = useAuth();
+
+    const [isLoading, setIsLoading] = useState(false);
 
     const [name, setName] = useState("");
     const [validName, setValidName] = useState(false);
@@ -67,6 +71,7 @@ function UserForm({
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
         const body = JSON.stringify({
             name,
             username,
@@ -81,7 +86,7 @@ function UserForm({
                 career: career,
             });
             const response = await postData("user/add", body, auth.accessToken);
-            console.log(response);
+            response && setIsLoading(false);
             if (response.status < 400) {
                 if (role === "student") {
                     const res = await postData(
@@ -188,7 +193,12 @@ function UserForm({
                             : false
                     }
                 >
-                    {type}
+                    <div className="loading">
+                        {type}
+                        {isLoading && (
+                            <UseAnimations size={12} animation={loading} />
+                        )}
+                    </div>
                 </button>
             </form>
         </div>

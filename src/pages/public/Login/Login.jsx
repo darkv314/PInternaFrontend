@@ -5,6 +5,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import background from "../../../assets/background.svg";
 import "./login.css";
 import useStudent from "../../../hooks/useStudent";
+import UseAnimations from "react-useanimations";
+import loading from "react-useanimations/lib/loading";
 
 const LOGIN_URL = "auth/signin";
 
@@ -23,9 +25,11 @@ function Login() {
     const [pwd, setPwd] = useState("");
     const [errMsg, setErrMsg] = useState("");
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setIsLoading(true);
         try {
             const response = await axios.post(
                 LOGIN_URL,
@@ -60,6 +64,10 @@ function Login() {
             errRef.current.focus();
         }
     };
+
+    useEffect(() => {
+        setIsLoading(false);
+    }, [errMsg]);
 
     useEffect(() => {
         userRef.current.focus();
@@ -112,7 +120,14 @@ function Login() {
                         />
                     </div>
 
-                    <button disabled={!user || !pwd}>Log In</button>
+                    <button disabled={!user || !pwd}>
+                        <div className="loading">
+                            Log In
+                            {isLoading && (
+                                <UseAnimations size={12} animation={loading} />
+                            )}
+                        </div>
+                    </button>
                 </form>
             </section>
         </div>

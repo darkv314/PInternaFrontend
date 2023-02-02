@@ -1,6 +1,8 @@
 import deleteData from "../../api/DeleteData";
 import "./deletePopUp.css";
 import useAuth from "../../hooks/useAuth";
+import UseAnimations from "react-useanimations";
+import loading from "react-useanimations/lib/loading";
 
 function DeletePopUp({
     setDeletePopUp,
@@ -11,6 +13,7 @@ function DeletePopUp({
     element,
 }) {
     const { auth } = useAuth();
+    const [isLoading, setIsLoading] = useState(false);
     return (
         <div className="deletePopUp" onClick={() => setDeletePopUp(false)}>
             <div className="deleteContent" onClick={(e) => e.stopPropagation()}>
@@ -18,6 +21,7 @@ function DeletePopUp({
                 <div className="deletePopUpButtons">
                     <button
                         onClick={async () => {
+                            setIsLoading(true);
                             await deleteData(
                                 `${path}/${item[element]}`,
                                 auth?.accessToken
@@ -27,7 +31,12 @@ function DeletePopUp({
                         }}
                         className="confirm"
                     >
-                        Eliminar
+                        <div className="loading">
+                            Eliminar
+                            {isLoading && (
+                                <UseAnimations size={12} animation={loading} />
+                            )}
+                        </div>
                     </button>
                     <button
                         onClick={() => setDeletePopUp(false)}

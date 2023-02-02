@@ -3,6 +3,8 @@ import postData from "../../api/PostData";
 import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
 import SelectForm from "../SelectForm/SelectForm";
+import UseAnimations from "react-useanimations";
+import loading from "react-useanimations/lib/loading";
 // import "./materiaForm.css";
 
 function StudentForm({
@@ -14,12 +16,15 @@ function StudentForm({
 }) {
     const { auth } = useAuth();
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const [materia, setMateria] = useState(
         materias.length ? materias[0].id : null
     );
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
         const body = JSON.stringify({
             studentCode: user,
             courseId: parseInt(materia),
@@ -30,6 +35,7 @@ function StudentForm({
             body,
             auth.accessToken
         );
+        response && setIsLoading(false);
         if (response.status <= 400) {
             setCreateRelation(false);
             setSubmitted(!submitted);
@@ -59,7 +65,14 @@ function StudentForm({
                 />
 
                 {/* <label htmlFor="credits">Creditos:</label> */}
-                <button>Agregar</button>
+                <button>
+                    <div className="loading">
+                        Agregar
+                        {isLoading && (
+                            <UseAnimations size={12} animation={loading} />
+                        )}
+                    </div>
+                </button>
             </form>
         </div>
     );

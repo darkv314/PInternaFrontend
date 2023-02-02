@@ -3,6 +3,8 @@ import postData from "../../api/PostData";
 import putData from "../../api/PutData";
 import useAuth from "../../hooks/useAuth";
 import InputForm from "../InputForm/InputForm";
+import UseAnimations from "react-useanimations";
+import loading from "react-useanimations/lib/loading";
 // import "./gestionForm.css";
 
 function GestionForm({
@@ -16,6 +18,7 @@ function GestionForm({
 
     const [name, setName] = useState("");
     const [validName, setValidName] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         if (gestion) {
@@ -29,6 +32,7 @@ function GestionForm({
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
         const body = JSON.stringify({
             name,
         });
@@ -38,7 +42,8 @@ function GestionForm({
                 body,
                 auth.accessToken
             );
-            if (response.statusText === "Created") {
+            response && setIsLoading(false);
+            if (response.status < 400) {
                 setCreateGestion(false);
                 setSubmitted(!submitted);
                 alert("Gestión creada con exito");
@@ -75,7 +80,14 @@ function GestionForm({
                     setValue={setName}
                 />
 
-                <button disabled={!validName ? true : false}>{type}</button>
+                <button disabled={!validName ? true : false}>
+                    <div className="loading">
+                        {type}
+                        {isLoading && (
+                            <UseAnimations size={12} animation={loading} />
+                        )}
+                    </div>
+                </button>
             </form>
         </div>
     );
