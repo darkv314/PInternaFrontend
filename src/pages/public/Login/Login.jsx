@@ -11,6 +11,7 @@ import loading from "react-useanimations/lib/loading";
 const LOGIN_URL = "auth/signin";
 
 function Login() {
+    // console.log(import.meta.env.VITE_DATABASE_URL);
     const { setAuth } = useAuth();
     const { setStudent } = useStudent();
 
