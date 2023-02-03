@@ -42,7 +42,7 @@
 }
 
 .cancel:hover {
-    background-color: var(--secondary);
+    background-color: var(--cyan);
     color: var(--white);
 }
 
