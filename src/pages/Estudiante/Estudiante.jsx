@@ -115,7 +115,8 @@ function Estudiante() {
         <div className="estudiante">
             <div className="top-side">
                 <h1>Estudiante</h1>
-                <h2>{student.name}</h2>
+                <h4>{student.name}</h4>
+                {/* <h2>{student.name}</h2> */}
             </div>
             {createRelation ? (
                 <StudentForm
