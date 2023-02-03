@@ -3,6 +3,7 @@ import "./deletePopUp.css";
 import useAuth from "../../hooks/useAuth";
 import UseAnimations from "react-useanimations";
 import loading from "react-useanimations/lib/loading";
+import { useState } from "react";
 
 function DeletePopUp({
     setDeletePopUp,

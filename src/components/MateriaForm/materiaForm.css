@@ -15,6 +15,7 @@
 }
 
 .createForm form {
+    margin-right: 7.5%;
     max-width: 300px;
     min-width: 22.5%;
     border-radius: 1em;
@@ -91,13 +92,8 @@
 }
 
 @media (max-width: 450px) {
-    .createForm {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: start;
-    }
     .createForm form {
-        justify-self: start;
-        margin-left: 5%;
+        min-width: 75%;
+        margin-right: 15%;
     }
 }
