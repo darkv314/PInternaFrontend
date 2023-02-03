@@ -6,3 +6,9 @@
     background-color: var();
     overflow: hidden;
 }
+
+@media (max-width: 425px) {
+    .layout {
+        grid-template-columns: 15% 1fr;
+    }
+}
