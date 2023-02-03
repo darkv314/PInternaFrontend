@@ -4,6 +4,10 @@
     overflow: auto;
     margin: 0 1rem;
 }
+/* 
+.navigation-buttons {
+    display: none;
+} */
 
 .table-container {
     font-family: inherit;
@@ -90,3 +94,9 @@
     margin-left: 0.1em;
     padding: 0.3em;
 }
+
+/* @media (max-width: 450px) {
+    .full-table {
+        max-height: 80%;
+    }
+} */
