@@ -11,6 +11,7 @@ import StudentForm from "../../components/StudentForm/StudentForm";
 function Estudiante() {
     const { auth } = useAuth();
     const { student } = useStudent();
+    const [seasons, setSeasons] = useState([]);
     const [materias, setMaterias] = useState([]);
     const [createRelation, setCreateRelation] = useState(false);
     const [courses, setCourses] = useState([]);
@@ -42,10 +43,18 @@ function Estudiante() {
                     cell: "lecturer",
                 },
                 {
+                    name: "Gestión",
+                    cell: "seasonName",
+                },
+                {
                     name: "Dueño",
                     cell: "ownerUsername",
                 },
             ],
+        },
+        {
+            main: "Acciones",
+            columns: ["Eliminar"],
         },
     ];
     const tablaConfigStudent = [
@@ -76,11 +85,11 @@ function Estudiante() {
                     name: "Créditos",
                     cell: "credits",
                 },
+                {
+                    name: "Gestión",
+                    cell: "seasonName",
+                },
             ],
-        },
-        {
-            main: "Acciones",
-            columns: ["Eliminar"],
         },
     ];
 
@@ -91,6 +100,7 @@ function Estudiante() {
             auth?.accessToken
         );
         fetchData("course", setCourses, auth?.accessToken);
+        fetchData("season", setSeasons, auth?.accessToken);
     }, []);
 
     useEffect(() => {
@@ -125,6 +135,7 @@ function Estudiante() {
                     setCreateRelation={setCreateRelation}
                     submitted={submitted}
                     setSubmitted={setSubmitted}
+                    seasons={seasons}
                 />
             ) : null}
             {deletePopUp ? (
@@ -146,7 +157,7 @@ function Estudiante() {
             ) : null}
             <Tabla
                 config={
-                    !auth?.roles?.find((role) => role.includes(["student"]))
+                    auth?.roles?.find((role) => role.includes("student"))
                         ? tablaConfigStudent
                         : tablaConfig
                 }

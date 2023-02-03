@@ -5,8 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5em 0.75em;
-    border-radius: 0.5em;
+    padding: 0.75rem 1.05rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    /* border: 0.1px solid var(--primary); */
     background-color: var(--cyan);
 }
 
