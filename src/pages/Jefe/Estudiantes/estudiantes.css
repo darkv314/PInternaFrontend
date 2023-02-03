@@ -1,9 +1,11 @@
 .jefeEstudiantes {
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 30% 70%;
+    max-height: 100vh;
+    grid-template-rows: 1fr 2fr;
+    gap: 1rem;
 }
 
 .usercode {
-    text-align: center;
+    text-align: left;
 }

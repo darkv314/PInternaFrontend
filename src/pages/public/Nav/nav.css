@@ -18,5 +18,5 @@ nav a {
 }
 
 nav svg:hover {
-    color: var(--secondary);
+    color: var(--cyan);
 }

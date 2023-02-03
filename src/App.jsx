@@ -14,41 +14,48 @@ import Home from "./pages/Home/Home";
 function App() {
     return (
         <Routes>
-            <Route path="/" element={<Layout />}>
-                {/*Public routes*/}
-                <Route path="login" element={<Login />} />
-                <Route path="unauthorized" element={<Unauthorized />} />
+            <Route path="/">
+                <Route path="/" element={<Layout />}>
+                    {/*Public routes*/}
+                    <Route path="login" element={<Login />} />
+                    <Route path="unauthorized" element={<Unauthorized />} />
 
-                {/* Protected Routes */}
-                <Route
-                    element={
-                        <RequireAuth
-                            allowedRoles={["jefe", "student", "admin"]}
-                        />
-                    }
-                >
-                    <Route path="/" element={<Home />}></Route>
-                </Route>
-
-                <Route element={<RequireAuth allowedRoles={["jefe"]} />}>
-                    <Route path="jefe/materias" element={<Materias />} />
-                    <Route path="jefe/estudiantes" element={<Estudiantes />} />
-                </Route>
-                <Route element={<RequireAuth allowedRoles={["admin"]} />}>
-                    <Route path="admin/usuarios" element={<Usuarios />} />
-                    <Route path="admin/gestiones" element={<Gestiones />} />
-                </Route>
-                <Route
-                    element={<RequireAuth allowedRoles={["jefe", "student"]} />}
-                >
+                    {/* Protected Routes */}
                     <Route
-                        path="estudiante/materias"
-                        element={<Estudiante />}
-                    />
-                </Route>
+                        element={
+                            <RequireAuth
+                                allowedRoles={["jefe", "student", "admin"]}
+                            />
+                        }
+                    >
+                        <Route path="/" element={<Home />}></Route>
+                    </Route>
 
-                {/* Missing */}
-                <Route path="missing" element={<Missing />} />
+                    <Route element={<RequireAuth allowedRoles={["jefe"]} />}>
+                        <Route path="jefe/materias" element={<Materias />} />
+                        <Route
+                            path="jefe/estudiantes"
+                            element={<Estudiantes />}
+                        />
+                    </Route>
+                    <Route element={<RequireAuth allowedRoles={["admin"]} />}>
+                        <Route path="admin/usuarios" element={<Usuarios />} />
+                        <Route path="admin/gestiones" element={<Gestiones />} />
+                    </Route>
+                    <Route
+                        element={
+                            <RequireAuth allowedRoles={["jefe", "student"]} />
+                        }
+                    >
+                        <Route
+                            path="estudiante/materias"
+                            element={<Estudiante />}
+                        />
+                    </Route>
+
+                    {/* Missing */}
+                    <Route path="missing" element={<Missing />} />
+                </Route>
             </Route>
         </Routes>
     );

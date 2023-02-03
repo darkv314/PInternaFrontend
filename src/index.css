@@ -8,14 +8,17 @@
 
 #root {
     font-family: "Karla", sans-serif;
-    --primary: #0e1941;
+    --primary: #22333b;
+    --primary-disabled: #0d1f2d8d;
     --blue: #b2faf2;
     --white: #fdfffc;
     --yellow: #fffde7;
-    --red: #c1292e;
-    --secondary: #05b4d5;
-    --secondary-disabled: #05b2d567;
+    --red: #b50f43;
+    --secondary: #51a8ff;
+    --secondary-disabled: #1a3e619f;
     --text: #2f3d4c;
-    --cyan: #44a9ba;
-    --green: #6bff8c;
+    --cyan: #1dd2a5;
+    --cyan-disabled: #00f0b481;
+
+    /* --green: #6bff8c; */
 }

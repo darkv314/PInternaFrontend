@@ -69,7 +69,7 @@ function Estudiantes() {
         <div className="jefeEstudiantes">
             <div className="top-side">
                 <h1>Estudiantes</h1>
-                <p>{career.name}</p>
+                <h4>{career.name}</h4>
             </div>
 
             {/* <p>{JSON.stringify(students)}</p> */}

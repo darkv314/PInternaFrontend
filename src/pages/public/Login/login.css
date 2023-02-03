@@ -42,17 +42,19 @@
 
 .loginSection form button {
     border: none;
-    background-color: var(--secondary);
+    background-color: var(--cyan);
     padding: 0.75em;
     font-family: inherit;
     border-radius: 0.3rem;
-    color: whitesmoke;
+    color: black;
+    font-weight: 600;
     margin-top: 2em;
 }
 
 .loginSection form button:disabled {
-    background-color: var(--secondary-disabled);
-    color: black;
+    background-color: var(--cyan-disabled);
+    color: rgb(101, 101, 101);
+    font-weight: 400;
 }
 
 .inputForm {
@@ -69,7 +71,7 @@
 }
 
 .inputForm input:focus {
-    outline-color: var(--secondary);
+    outline-color: var(--cyan);
 }
 
 .inputForm label {

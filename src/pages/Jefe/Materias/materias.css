@@ -1,23 +1,44 @@
 .materias {
+    /* max-width: 100%; */
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 30% 70%;
+    max-height: 100vh;
+    grid-template-rows: 1fr 2fr;
+    gap: 1rem;
 }
 
 .top-side {
-    margin: 0 1rem;
+    background-color: var(--cyan);
+    /* color: whitesmoke; */
+    /* margin: 0 1rem; */
+    /* max-width: 100%; */
+    text-overflow: clip;
+    padding: 0 1rem;
     display: flex;
     gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.top-side h4 {
+    color: whitesmoke;
 }
 
 .top-side select {
+    background-color: var(--primary);
+    color: var(--white);
     border-radius: 0.3em;
     padding: 0.3em;
     font-family: inherit;
-    outline-color: var(--secondary);
+    border: none;
+    /* outline-color: var(--cyan); */
+}
+
+.top-side select:focus {
+    outline: none;
 }
 
 .Editar,
@@ -35,3 +56,10 @@
 .name {
     font-weight: bold;
 }
+
+/* @media (max-width: 630px) {
+    .top-side h4 {
+        font-size: 0.55rem;
+        text-overflow: clip;
+    }
+} */

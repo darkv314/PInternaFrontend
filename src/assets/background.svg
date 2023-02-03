@@ -1,136 +1,244 @@
 <svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g clip-path="url(#clip0_0_8727)">
-<rect width="1600" height="1200" fill="white"/>
-<rect width="1600" height="1200" fill="white"/>
-<mask id="mask0_0_8727" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1200">
-<rect width="1600" height="1200" fill="white"/>
+<g id="Thur " clip-path="url(#clip0_0_8727)">
+<rect width="1600" height="1200" fill="#00F0B5"/>
+<rect id="Background" width="1600" height="1200" fill="#00F0B5"/>
+<mask id="mask0_0_8727" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1200">
+<rect id="Background_2" width="1600" height="1200" fill="white"/>
 </mask>
 <g mask="url(#mask0_0_8727)">
+<g id="Thur">
+<g id="Shape">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M900 100L800 200L700 100L800 0L900 100Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M900 100L800 200L700 100L800 0L900 100Z" fill="url(#pattern0)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_2">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M501 1100L401 1200L301 1100L401 1000L501 1100Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M501 1100L401 1200L301 1100L401 1000L501 1100Z" fill="url(#pattern1)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_3">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M301 1100L201 1200L101 1100L201 1000L301 1100Z" fill="url(#paint0_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M301 1100L201 1200L101 1100L201 1000L301 1100Z" fill="url(#pattern2)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M401 1200L401 1000H601L401 1200Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_4">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M401 1200L401 1000H601L401 1200Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M401 1200L401 1000H601L401 1200Z" fill="url(#pattern3)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M1001 1000H1201V1200H1001V1000Z" fill="#0859A4"/>
-<path d="M801 1000H1001V1200L801 1000Z" fill="#FFD4C4"/>
+</g>
+<path id="Shape_5" d="M1001 1000H1201V1200H1001V1000Z" fill="#0891A4"/>
+<path id="Shape_6" d="M801 1000H1001V1200L801 1000Z" fill="#E0DFDC"/>
+<g id="Shape_7">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1001 1200H801V1000L1001 1200Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1001 1200H801V1000L1001 1200Z" fill="url(#pattern4)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M1 1000H201V1200L1 1000Z" fill="#FFD4C4"/>
+</g>
+<path id="Shape_8" d="M1 1000H201V1200L1 1000Z" fill="#E0DFDC"/>
+<g id="Shape_9">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1100 100L1000 200L900 100L1000 0L1100 100Z" fill="url(#paint1_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1100 100L1000 200L900 100L1000 0L1100 100Z" fill="url(#pattern5)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_10">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M800 300C800 355.228 755.228 400 700 400H600V200H700C755.228 200 800 244.772 800 300Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M800 300C800 355.228 755.228 400 700 400H600V200H700C755.228 200 800 244.772 800 300Z" fill="url(#pattern6)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_11">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M900 600C955.228 600 1000 644.772 1000 700V800H900C844.772 800 800 755.228 800 700C800 644.772 844.772 600 900 600Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M900 600C955.228 600 1000 644.772 1000 700V800H900C844.772 800 800 755.228 800 700C800 644.772 844.772 600 900 600Z" fill="url(#pattern7)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_12">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M901 650C928.614 650 951 672.386 951 700V750H901C873.386 750 851 727.614 851 700C851 672.386 873.386 650 901 650Z" fill="url(#paint2_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M901 650C928.614 650 951 672.386 951 700V750H901C873.386 750 851 727.614 851 700C851 672.386 873.386 650 901 650Z" fill="url(#pattern8)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_13">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 900C1400 955.228 1444.77 1000 1500 1000H1600V900C1600 844.772 1555.23 800 1500 800C1444.77 800 1400 844.772 1400 900Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 900C1400 955.228 1444.77 1000 1500 1000H1600V900C1600 844.772 1555.23 800 1500 800C1444.77 800 1400 844.772 1400 900Z" fill="url(#pattern9)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M1200 700C1200 755.228 1155.23 800 1100 800H1000V700C1000 644.772 1044.77 600 1100 600C1155.23 600 1200 644.772 1200 700Z" fill="#0859A4"/>
+</g>
+<path id="Shape_14" d="M1200 700C1200 755.228 1155.23 800 1100 800H1000V700C1000 644.772 1044.77 600 1100 600C1155.23 600 1200 644.772 1200 700Z" fill="#0891A4"/>
+<g id="Shape_15">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1151 700C1151 727.614 1128.61 750 1101 750H1051V700C1051 672.386 1073.39 650 1101 650C1128.61 650 1151 672.386 1151 700Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1151 700C1151 727.614 1128.61 750 1101 750H1051V700C1051 672.386 1073.39 650 1101 650C1128.61 650 1151 672.386 1151 700Z" fill="url(#pattern10)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M749 300C749 327.614 726.614 350 699 350H649V300C649 272.386 671.386 250 699 250C726.614 250 749 272.386 749 300Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M749 300C749 327.614 726.614 350 699 350H649V300C649 272.386 671.386 250 699 250C726.614 250 749 272.386 749 300Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M749 300C749 327.614 726.614 350 699 350H649V300C649 272.386 671.386 250 699 250C726.614 250 749 272.386 749 300Z" fill="url(#pattern11)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1152 1100C1152 1127.61 1129.61 1150 1102 1150H1052V1100C1052 1072.39 1074.39 1050 1102 1050C1129.61 1050 1152 1072.39 1152 1100Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_17">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1152 1100C1152 1127.61 1129.61 1150 1102 1150H1052V1100C1052 1072.39 1074.39 1050 1102 1050C1129.61 1050 1152 1072.39 1152 1100Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1152 1100C1152 1127.61 1129.61 1150 1102 1150H1052V1100C1052 1072.39 1074.39 1050 1102 1050C1129.61 1050 1152 1072.39 1152 1100Z" fill="url(#pattern12)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M1500 1200C1555.23 1200 1600 1155.23 1600 1100V1000H1500C1444.77 1000 1400 1044.77 1400 1100C1400 1155.23 1444.77 1200 1500 1200Z" fill="#0859A4"/>
+</g>
+<path id="Shape_18" d="M1500 1200C1555.23 1200 1600 1155.23 1600 1100V1000H1500C1444.77 1000 1400 1044.77 1400 1100C1400 1155.23 1444.77 1200 1500 1200Z" fill="#0891A4"/>
+<g id="Shape_19">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1000 400C1110.46 400 1200 489.315 1200 599.49V600H800V599.49C800 489.315 889.543 400 1000 400Z" fill="url(#paint3_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1000 400C1110.46 400 1200 489.315 1200 599.49V600H800V599.49C800 489.315 889.543 400 1000 400Z" fill="url(#pattern13)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M800 800C800 910.457 710.457 1000 600 1000L600 600C710.457 600 800 689.543 800 800Z" fill="#0859A4"/>
+</g>
+<path id="Shape_20" d="M800 800C800 910.457 710.457 1000 600 1000L600 600C710.457 600 800 689.543 800 800Z" fill="#0891A4"/>
+<g id="Shape_21">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 800C1510.46 800 1600 710.457 1600 600L1200 600C1200 710.457 1289.54 800 1400 800Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 800C1510.46 800 1600 710.457 1600 600L1200 600C1200 710.457 1289.54 800 1400 800Z" fill="url(#pattern14)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1000.5 399.5C890.043 399.5 800.5 310.405 800.5 200.5L1200.5 200.5C1200.5 310.405 1110.96 399.5 1000.5 399.5Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_22">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1000.5 399.5C890.043 399.5 800.5 310.405 800.5 200.5L1200.5 200.5C1200.5 310.405 1110.96 399.5 1000.5 399.5Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1000.5 399.5C890.043 399.5 800.5 310.405 800.5 200.5L1200.5 200.5C1200.5 310.405 1110.96 399.5 1000.5 399.5Z" fill="url(#pattern15)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M600 200L600 0L800 0L600 200Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_23">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M600 200L600 0L800 0L600 200Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M600 200L600 0L800 0L600 200Z" fill="url(#pattern16)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M0 0H200V200H0V0Z" fill="#0859A4"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M400 600H600V800H400V600Z" fill="#05B4D5"/>
+</g>
+<path id="Shape_24" d="M0 0H200V200H0V0Z" fill="#0891A4"/>
+<g id="Shape_25">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M400 600H600V800H400V600Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 600H600V800H400V600Z" fill="url(#pattern17)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_26">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 400L1400 600H1600V400L1400 400Z" fill="#69CDCD"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 400L1400 600H1600V400L1400 400Z" fill="url(#pattern18)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_27">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 300L200 400L100 500L0 400L100 300Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 300L200 400L100 500L0 400L100 300Z" fill="url(#pattern19)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_28">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M501 600L601 700L501 800L401 700L501 600Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M501 600L601 700L501 800L401 700L501 600Z" fill="url(#pattern20)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M100 500L200 600L100 700L0 600L100 500Z" fill="#FFD4C4"/>
+</g>
+<path id="Shape_29" d="M100 500L200 600L100 700L0 600L100 500Z" fill="#E0DFDC"/>
+<g id="Shape_30">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1499 450L1549 500L1499 550L1449 500L1499 450Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1499 450L1549 500L1499 550L1449 500L1499 450Z" fill="url(#pattern21)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M1501 850L1551 900L1501 950L1451 900L1501 850Z" fill="#FFD4C4"/>
-<path d="M1000 250L1050 300L1000 350L950 300L1000 250Z" fill="white"/>
-<path d="M1500 100L1600 200V0L1500 100Z" fill="#FFD4C4"/>
-<path d="M100 700L200 800L100 900L0 800L100 700Z" fill="#0859A4"/>
-<path d="M1300 100L1400 200L1500 100L1400 0L1300 100Z" fill="#0859A4"/>
+</g>
+<path id="Shape_31" d="M1501 850L1551 900L1501 950L1451 900L1501 850Z" fill="#E0DFDC"/>
+<path id="Shape_32" d="M1000 250L1050 300L1000 350L950 300L1000 250Z" fill="#00F0B5"/>
+<path id="Shape_33" d="M1500 100L1600 200V0L1500 100Z" fill="#E0DFDC"/>
+<path id="Shape_34" d="M100 700L200 800L100 900L0 800L100 700Z" fill="#0891A4"/>
+<path id="Shape_35" d="M1300 100L1400 200L1500 100L1400 0L1300 100Z" fill="#0891A4"/>
+<g id="Shape_36">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 300C400 355.228 355.228 400 300 400H200L200 200H300C355.228 200 400 244.772 400 300Z" fill="url(#paint4_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 300C400 355.228 355.228 400 300 400H200L200 200H300C355.228 200 400 244.772 400 300Z" fill="url(#pattern22)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_37">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1200 900C1200 955.228 1155.23 1000 1100 1000H1000V800H1100C1155.23 800 1200 844.772 1200 900Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1200 900C1200 955.228 1155.23 1000 1100 1000H1000V800H1100C1155.23 800 1200 844.772 1200 900Z" fill="url(#pattern23)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_38">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1300 1200C1355.23 1200 1400 1155.23 1400 1100V1000L1200 1000V1100C1200 1155.23 1244.77 1200 1300 1200Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1300 1200C1355.23 1200 1400 1155.23 1400 1100V1000L1200 1000V1100C1200 1155.23 1244.77 1200 1300 1200Z" fill="url(#pattern24)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_39">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M300 400C355.228 400 400 444.772 400 500C400 555.228 355.228 600 300 600H200L200 500C200 444.772 244.772 400 300 400Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M300 400C355.228 400 400 444.772 400 500C400 555.228 355.228 600 300 600H200L200 500C200 444.772 244.772 400 300 400Z" fill="url(#pattern25)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M500 400C555.228 400 600 444.772 600 500V600H500C444.772 600 400 555.228 400 500C400 444.772 444.772 400 500 400Z" fill="#0859A4"/>
+</g>
+<path id="Shape_40" d="M500 400C555.228 400 600 444.772 600 500V600H500C444.772 600 400 555.228 400 500C400 444.772 444.772 400 500 400Z" fill="#0891A4"/>
+<g id="Shape_41">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M700 1200C644.772 1200 600 1155.23 600 1100V1000H700C755.228 1000 800 1044.77 800 1100C800 1155.23 755.228 1200 700 1200Z" fill="url(#paint5_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M700 1200C644.772 1200 600 1155.23 600 1100V1000H700C755.228 1000 800 1044.77 800 1100C800 1155.23 755.228 1200 700 1200Z" fill="url(#pattern26)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_42">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 200C400 89.5431 489.543 0 600 0V400C489.543 400 400 310.457 400 200Z" fill="url(#paint6_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 200C400 89.5431 489.543 0 600 0V400C489.543 400 400 310.457 400 200Z" fill="url(#pattern27)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M200 0H400V200L200 0Z" fill="#FFD4C4"/>
+</g>
+<path id="Shape_43" d="M200 0H400V200L200 0Z" fill="#E0DFDC"/>
+<g id="Shape_44">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 200H200L200 0L400 200Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 200H200L200 0L400 200Z" fill="url(#pattern28)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 200H200V400L0 200Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_45">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 200H200V400L0 200Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 200H200V400L0 200Z" fill="url(#pattern29)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M200 1000H0L0 800L200 1000Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_46">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M200 1000H0L0 800L200 1000Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M200 1000H0L0 800L200 1000Z" fill="url(#pattern30)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1400 200V0L1200 0L1400 200Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_47">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1400 200V0L1200 0L1400 200Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 200V0L1200 0L1400 200Z" fill="url(#pattern31)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_48">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M200 800V600H400L200 800Z" fill="url(#paint7_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M200 800V600H400L200 800Z" fill="url(#pattern32)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_49">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1600 200L1400 200L1400 400L1600 200Z" fill="url(#paint8_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1600 200L1400 200L1400 400L1600 200Z" fill="url(#pattern33)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M800 800H1000V1000L800 800Z" fill="#FFD4C4"/>
-<path d="M1200 800L1200 1000H1400L1200 800Z" fill="#FFD4C4"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1000 0H1200V200L1000 0Z" fill="#05B4D5"/>
+</g>
+<path id="Shape_50" d="M800 800H1000V1000L800 800Z" fill="#E0DFDC"/>
+<path id="Shape_51" d="M1200 800L1200 1000H1400L1200 800Z" fill="#E0DFDC"/>
+<g id="Shape_52">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1000 0H1200V200L1000 0Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1000 0H1200V200L1000 0Z" fill="url(#pattern34)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_53">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1000 1000H800V800L1000 1000Z" fill="url(#paint9_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1000 1000H800V800L1000 1000Z" fill="url(#pattern35)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_54">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 1000V800H1200L1400 1000Z" fill="url(#paint10_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 1000V800H1200L1400 1000Z" fill="url(#pattern36)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_55">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 1000C289.543 1000 200 910.457 200 800L600 800C600 910.457 510.457 1000 400 1000Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M400 1000C289.543 1000 200 910.457 200 800L600 800C600 910.457 510.457 1000 400 1000Z" fill="url(#pattern37)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path d="M1200 400C1200 289.543 1289.54 200 1400 200V600C1289.54 600 1200 510.457 1200 400Z" fill="#0859A4"/>
-<path d="M700 400C755.228 400 800 444.772 800 500C800 555.228 755.228 600 700 600H600V500C600 444.772 644.772 400 700 400Z" fill="#FFD4C4"/>
+</g>
+<path id="Shape_56" d="M1200 400C1200 289.543 1289.54 200 1400 200V600C1289.54 600 1200 510.457 1200 400Z" fill="#0891A4"/>
+<path id="Shape_57" d="M700 400C755.228 400 800 444.772 800 500C800 555.228 755.228 600 700 600H600V500C600 444.772 644.772 400 700 400Z" fill="#E0DFDC"/>
+<g id="Shape_58">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M350 300C350 327.614 327.614 350 300 350H250V300C250 272.386 272.386 250 300 250C327.614 250 350 272.386 350 300Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M350 300C350 327.614 327.614 350 300 350H250V300C250 272.386 272.386 250 300 250C327.614 250 350 272.386 350 300Z" fill="url(#pattern38)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_59">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M700 850C727.614 850 750 872.386 750 900V950H700C672.386 950 650 927.614 650 900C650 872.386 672.386 850 700 850Z" fill="url(#paint11_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M700 850C727.614 850 750 872.386 750 900V950H700C672.386 950 650 927.614 650 900C650 872.386 672.386 850 700 850Z" fill="url(#pattern39)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_60">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 0L200 100L100 200L0 100L100 0Z" fill="url(#paint12_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 0L200 100L100 200L0 100L100 0Z" fill="url(#pattern40)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_61">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 50L150 100L100 150L50 100L100 50Z" fill="#0E1941"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 50L150 100L100 150L50 100L100 50Z" fill="url(#pattern41)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M100 550L150 600L100 650L50 600L100 550Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_62">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M100 550L150 600L100 650L50 600L100 550Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M100 550L150 600L100 650L50 600L100 550Z" fill="url(#pattern42)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_63">
 <circle cx="1000" cy="500" r="50" fill="#0E1941"/>
 <circle cx="1000" cy="500" r="50" fill="url(#pattern43)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<circle cx="1500" cy="1100" r="50" fill="#05B4D5"/>
+</g>
+<g id="Shape_64">
+<circle cx="1500" cy="1100" r="50" fill="#BED3CA"/>
 <circle cx="1500" cy="1100" r="50" fill="url(#pattern44)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<circle cx="300" cy="500" r="50" fill="#05B4D5"/>
+</g>
+<g id="Shape_65">
+<circle cx="300" cy="500" r="50" fill="#BED3CA"/>
 <circle cx="300" cy="500" r="50" fill="url(#pattern45)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_66">
 <circle cx="900" cy="900" r="50" fill="#0E1941"/>
 <circle cx="900" cy="900" r="50" fill="url(#pattern46)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<circle cx="100" cy="800" r="50" fill="#05B4D5"/>
+</g>
+<g id="Shape_67">
+<circle cx="100" cy="800" r="50" fill="#BED3CA"/>
 <circle cx="100" cy="800" r="50" fill="url(#pattern47)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<circle cx="300" cy="100" r="50" fill="#05B4D5"/>
+</g>
+<g id="Shape_68">
+<circle cx="300" cy="100" r="50" fill="#BED3CA"/>
 <circle cx="300" cy="100" r="50" fill="url(#pattern48)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_69">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1300 1050L1350 1100L1300 1150L1250 1100L1300 1050Z" fill="url(#paint13_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1300 1050L1350 1100L1300 1150L1250 1100L1300 1050Z" fill="url(#pattern49)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_70">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M500 1050L550 1100L500 1150L450 1100L500 1050Z" fill="url(#paint14_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M500 1050L550 1100L500 1150L450 1100L500 1050Z" fill="url(#pattern50)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+<g id="Shape_71">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M699 450L749 500L699 550L649 500L699 450Z" fill="url(#paint15_linear_0_8727)"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M699 450L749 500L699 550L649 500L699 450Z" fill="url(#pattern51)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1500 50L1550 100L1500 150L1450 100L1500 50Z" fill="#05B4D5"/>
+</g>
+<g id="Shape_72">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1500 50L1550 100L1500 150L1450 100L1500 50Z" fill="#BED3CA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1500 50L1550 100L1500 150L1450 100L1500 50Z" fill="url(#pattern52)" fill-opacity="0.2" style="mix-blend-mode:overlay"/>
+</g>
+</g>
 </g>
 </g>
 <defs>
@@ -294,68 +402,68 @@
 <use xlink:href="#image0_0_8727" transform="scale(0.01)"/>
 </pattern>
 <linearGradient id="paint0_linear_0_8727" x1="1.75486" y1="1099.25" x2="200.245" y2="1297.74" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint1_linear_0_8727" x1="800.755" y1="99.2451" x2="999.245" y2="297.735" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint2_linear_0_8727" x1="801.377" y1="699.623" x2="900.623" y2="798.868" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint3_linear_0_8727" x1="601.51" y1="499.245" x2="760.302" y2="816.83" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint4_linear_0_8727" x1="100.755" y1="299.245" x2="299.245" y2="497.735" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint5_linear_0_8727" x1="899.245" y1="1100.75" x2="700.755" y2="902.265" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint6_linear_0_8727" x1="300.755" y1="198.49" x2="618.339" y2="357.282" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint7_linear_0_8727" x1="100.755" y1="699.245" x2="299.245" y2="897.735" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint8_linear_0_8727" x1="1499.25" y1="100.755" x2="1697.74" y2="299.245" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint9_linear_0_8727" x1="1099.25" y1="900.755" x2="900.755" y2="702.265" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint10_linear_0_8727" x1="1300.75" y1="1099.25" x2="1102.26" y2="900.755" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint11_linear_0_8727" x1="600.377" y1="899.623" x2="699.623" y2="998.868" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint12_linear_0_8727" x1="-99.2451" y1="99.2451" x2="99.2451" y2="297.735" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint13_linear_0_8727" x1="1200.38" y1="1099.62" x2="1299.62" y2="1198.87" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint14_linear_0_8727" x1="400.377" y1="1099.62" x2="499.623" y2="1198.87" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <linearGradient id="paint15_linear_0_8727" x1="599.377" y1="499.623" x2="698.623" y2="598.868" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7F5FFE"/>
-<stop offset="1" stop-color="#464544"/>
+<stop/>
+<stop offset="1" stop-color="#16A3B2"/>
 </linearGradient>
 <clipPath id="clip0_0_8727">
 <rect width="1600" height="1200" fill="white"/>

@@ -61,18 +61,20 @@
 .createForm form input:focus,
 .createForm form select:focus {
     outline: 3px solid;
-    outline-color: var(--secondary);
+    outline-color: var(--cyan);
 }
 
 .createForm button {
     margin-top: 0.5rem;
-    background-color: var(--secondary);
-    color: var(--white);
+    background-color: var(--cyan);
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .createForm button:disabled {
-    background-color: var(--secondary-disabled);
-    color: #000;
+    background-color: var(--cyan-disabled);
+    color: var(--primary);
+    font-weight: normal;
 }
 
 .startEndForm {
