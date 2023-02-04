@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import postData from "../../api/PostData";
 import putData from "../../api/PutData";
+import fetchData from "../../api/FetchData";
 import useAuth from "../../hooks/useAuth";
 import InputForm from "../InputForm/InputForm";
 import SelectForm from "../SelectForm/SelectForm";
@@ -42,16 +43,28 @@ function UserForm({
     const [career, setCareer] = useState(
         careers.length ? careers[0].name : null
     );
-
+    console.log(career);
     useEffect(() => {
         if (user) {
             setName(user.name);
             setUsername(user.username);
             setCode(user.code);
             setEmail(user.email);
-            setRole(user.role);
+            setRole(user.rolename);
+            if (user.rolename === "student") {
+                setCareer(career.career);
+            }
         }
     }, []);
+
+    useEffect(() => {
+        if (user?.rolename === "student")
+            fetchData(
+                `user-career/code/${user?.code}`,
+                setCareer,
+                auth?.accessToken
+            );
+    }, [name]);
 
     useEffect(() => {
         name.length >= 4 ? setValidName(true) : setValidName(false);
@@ -80,6 +93,7 @@ function UserForm({
             email,
             rolename: role,
         });
+        // console.log(role);
         if (type === "Crear") {
             const mat = JSON.stringify({
                 usercode: code,
@@ -114,15 +128,38 @@ function UserForm({
                 alert(`Usuario no creado: ${response.data.message}`);
             }
         } else {
+            // console.log(body);
             const response = await putData(
                 `user/update/${user.username}`,
                 body,
                 auth.accessToken
             );
-            if (response.status === 200) {
-                setCreateUser(false);
-                setSubmitted(!submitted);
-                alert("Usuario editado con exito");
+            response && setIsLoading(false);
+            if (response.status < 400) {
+                if (role === "student") {
+                    const res = await putData(
+                        `user-career/update/${user.code}`,
+                        JSON.stringify({
+                            usercode: code,
+                            userName: name,
+                            career: parseInt(career),
+                        }),
+                        auth.accessToken
+                    );
+                    if (res.status < 400) {
+                        setCreateUser(false);
+                        setSubmitted(!submitted);
+                        alert("Usuario editado con exito");
+                    } else {
+                        alert(`Usuario no editado: ${res.data.message}`);
+                    }
+                } else {
+                    setCreateUser(false);
+                    setSubmitted(!submitted);
+                    alert("Usuario creado con exito");
+                }
+            } else {
+                alert(`Usuario no editado: ${response.data.message}`);
             }
         }
     };

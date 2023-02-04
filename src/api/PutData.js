@@ -18,6 +18,7 @@ const putData = async (url, body, accessToken) => {
         } else {
             console.log(`Error: ${err.message}`);
         }
+        return err.response;
     }
 };
 
