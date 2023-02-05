@@ -1,5 +1,5 @@
 function Missing() {
-    return <div>Missing</div>;
+    return <div className="missing">Sorry :c</div>;
 }
 
 export default Missing;

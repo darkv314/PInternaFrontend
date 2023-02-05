@@ -54,7 +54,7 @@ function App() {
                     </Route>
 
                     {/* Missing */}
-                    <Route path="missing" element={<Missing />} />
+                    <Route path="*" element={<Missing />} />
                 </Route>
             </Route>
         </Routes>
